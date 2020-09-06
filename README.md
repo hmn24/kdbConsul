@@ -59,3 +59,19 @@ ModifyIndex             | 13
 
 The UI for consul-server can be accessed from 
 http://localhost:8500/ui/
+
+To register services without coming up with json script, one option is to send a curl command (via system in kdb+) as per https://codingbee.net/uncategorized/register-external-service-to-consul
+
+```
+curl -X PUT -d '{
+"Node": "aws-ntp",
+"Address": "169.254.169.123",
+"Service": {
+"Service": "ntp"
+}
+}' http://localhost:8500/v1/catalog/register
+
+or
+
+curl --request PUT --data @deregister.json http://localhost:8500/v1/catalog/deregister
+```
