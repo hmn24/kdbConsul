@@ -1,0 +1,16 @@
+{
+  "service": {
+    "name": "kdb",
+    "tags": [
+      "kdbcurl"
+    ],
+    "port": 5050,
+    "check": {
+      "args": [
+        "curl",
+        "localhost:5050"
+      ],
+      "interval": "10s"
+    }
+  }
+}
