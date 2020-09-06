@@ -22,7 +22,9 @@ https://www.consul.io/docs/agent/checks
 https://www.consul.io/api-docs/agent/service
 https://www.consul.io/docs/commands
 https://learn.hashicorp.com/tutorials/consul/service-registration-health-checks
-
+https://medium.com/velotio-perspectives/a-practical-guide-to-hashicorp-consul-part-1-5ee778a7fcf4
+https://howtodoinjava.com/spring-cloud/consul-service-registration-discovery/
+https://www.consul.io/api-docs/agent/service
 
 From within kdb, one can use HTTP GET request to check for healthy services. Examples are:
 
